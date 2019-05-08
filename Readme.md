@@ -1,7 +1,8 @@
 # Личный проект «Техномарт»
 
 * Студент: [Давид Кан](https://up.htmlacademy.ru/htmlcss/25/user/587963).
-* Наставник: [Андрей Горбач](https://up.htmlacademy.ru/htmlcss/25/user/lemberg).
+* Наставник: [Андрей Горбач](https://up.htmlacademy.ru/htmlcss/25/user/453262
+).
 
 ---
 
