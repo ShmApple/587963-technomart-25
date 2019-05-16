@@ -10,7 +10,7 @@
         <a href="index.html" class="btn logo header-up__logo">Техномарт</a>
         <ul class="management header-up__management">
           <li class="management__item management__item--bookmark"><a href="#">Закладки <span>0</span></a></li>
-          <li class="management__item management__item--cart"><a href="#">Корзина <span>0</span></a></li>
+          <li class="management__item management__item--cart management__item--added"><a href="#">Корзина <span>10</span></a></li>
           <li class="management__item management__item--order"><a href="#">Оформить заказ</a></li>
         </ul>
       </div>
@@ -21,7 +21,10 @@
           <address>г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
         </section>
         <section class="header-down__user-block user-block user-block--loged">
-          <a href="#" class="btn user-block__btn user-block__btn--loged">Равшан Джамшутович</a>
+          <div class="">
+            <a href="#" class="btn user-block__btn user-block__btn--personal-account">Равшан Джамшутович</a>
+            <a href="#" class="btn user-block__btn user-block__btn--exit"><span class="visually-hidden">Выйти</span></a>
+          </div>
           <ul class="user-block__controls">
             <li><a href="#">Мои заказы</a></li>
             <li><a href="#">Личный кабинет</a></li>
@@ -55,12 +58,12 @@
       </div>
     </header>
     <main>
-      <div class="breadcrumbs">
-        <a href="index.html"><span class="visually-hidden">Главная</span></a>
-        <a href="#">Каталог</a>
-        <a href="#">Инструмент</a>
-        <a>Перфораторы</a>
-      </div>
+      <ul class="breadcrumbs">
+        <li><a href="index.html"><span class="visually-hidden">Главная</span></a></li>
+        <li><a href="#">Каталог</a></li>
+        <li><a href="#">Инструмент</a></li>
+        <li><a>Перфораторы</a></li>
+      </ul>
       <h1 class="heading">Перфораторы</h1>
       <div class="sorting">
         <span>Сортировка:</span>
@@ -131,14 +134,12 @@
             <span class="card__new-price">12500 р.</span>
           </li>
         </ul>
-        <div class="pages">
-          <ul>
-            <li><a class="btn active">1</a></li>
-            <li><a href="#" class="btn">2</a></li>
-            <li><a href="#" class="btn">3</a></li>
-            <li><a href="#" class="btn">Следующая</a></li>
-          </ul>
-        </div>
+        <ul class="pages">
+          <li><a class="btn active">1</a></li>
+          <li><a href="#" class="btn">2</a></li>
+          <li><a href="#" class="btn">3</a></li>
+          <li><a href="#" class="btn">Следующая</a></li>
+        </ul>
       </section>
       <section class="about-good">
         <h2>Пара слов о перфораторах</h2>
