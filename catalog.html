@@ -8,6 +8,12 @@
     <header class="main-header">
       <div class="main-header__up header-up">
         <a href="index.html" class="btn logo header-up__logo">Техномарт</a>
+        <form action="https://htmlacademy.ru/echo" method="get">
+          <label for="search"><span class="visually-hidden">Поиск по сайту</span>
+            <input type="search" name="search" placeholder="Поиск">
+          </label>
+          <button type="submit"><span class="visually-hidden">Найти</span></button>
+        </form>
         <ul class="management header-up__management">
           <li class="management__item management__item--bookmark"><a href="#">Закладки <span>0</span></a></li>
           <li class="management__item management__item--cart management__item--added"><a href="#">Корзина <span>10</span></a></li>
@@ -73,8 +79,8 @@
           <li><a href="#">По функционалу</a></li>
         </ul>
         <ul>
-          <li><a class="sorting__up sorting__up--active">По цене</a></li>
-          <li><a href="#" class="sorting__down">По типу</a></li>
+          <li><a class="sorting__up sorting__up--active"><span class="visually-hidden">По возрастанию</span></a></li>
+          <li><a href="#" class="sorting__down"><span class="visually-hidden">По убыванию</span></a></li>
         </ul>
       </div>
       <section class="catalog">
