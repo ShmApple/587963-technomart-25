@@ -8,6 +8,12 @@
     <header class="main-header">
       <div class="main-header__up header-up">
         <a href="#" class="btn logo header-up__logo">Техномарт</a>
+        <form action="https://htmlacademy.ru/echo" method="get">
+          <label for="search"><span class="visually-hidden">Поиск по сайту</span>
+            <input type="search" name="search" placeholder="Поиск">
+          </label>
+          <button type="submit"><span class="visually-hidden">Найти</span></button>
+        </form>
         <ul class="management header-up__management">
           <li class="management__item management__item--bookmark"><a href="#">Закладки <span>0</span></a></li>
           <li class="management__item management__item--cart"><a href="#">Корзина <span>0</span></a></li>
@@ -221,6 +227,28 @@
           <img class="main-contacts__map" src="img/map.jpg" width="300" height="158" alt="Мы на карте">
           <a href="#" class="btn">Заблудились? Напишите нам!</a>
         </div>
+      </section>
+      <section class="popup letter-popup">
+        <a href="#" class="popup__close"><span class="visually-hidden">Закрыть</span></a>
+        <form class="letter-popup__form" action="https://htmlacademy.ru/echo" method="post">
+          <label>
+            Ваше имя:
+            <input type="text" name="name" value="" placeholder="Имя Фамилия">
+          </label>
+          <label>
+            Ваш e-mail:
+            <input type="email" name="email" value="" placeholder="email@example.com">
+          </label>
+          <label>
+            Текст письма:
+            <textarea name="letter" placeholder="В свободной форме"></textarea>
+          </label>
+          <button type="submit" name="submit">Отправить</button>
+        </form>
+      </section>
+      <section class="popup map-popup">
+        <a href="#" class="popup__close"><span class="visually-hidden">Закрыть</span></a>
+        <img src="img/full-map.jpg" alt="">
       </section>
     </main>
     <footer class="main-footer">
