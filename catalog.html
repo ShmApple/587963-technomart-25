@@ -45,7 +45,7 @@
               <a href="#">Компания</a>
             </li>
             <li>
-              <a href="catalog.html">Каталог</a>
+              <a>Каталог</a>
             </li>
             <li>
               <a href="#">Новости</a>
@@ -108,7 +108,7 @@
                   </label>
                 </li>
                 <li class="filter-form__item">
-                  <input id="Hitachi" class="visually-hidden checkbox" type="checkbox" name="firm" value="Hitachi" checked>
+                  <input id="Hitachi" class="visually-hidden checkbox" type="checkbox" name="firm" value="Hitachi">
                   <label for="Hitachi" class="checkbox-label">
                     Hitachi
                   </label>
@@ -125,7 +125,7 @@
                   </label>
                 </li>
                 <li class="filter-form__item">
-                  <input id="network" class="visually-hidden radio" type="radio" name="power" value="network" >
+                  <input id="network" class="visually-hidden radio" type="radio" name="power" value="network">
                   <label for="network" class="radio-label">
                     Сетевые
                   </label>
@@ -145,8 +145,8 @@
             <li><a href="#">По функционалу</a></li>
           </ul>
           <ul>
-            <li><a class="sorting__up sorting__up--active"><span class="visually-hidden">По возрастанию</span></a></li>
-            <li><a href="#" class="sorting__down"><span class="visually-hidden">По убыванию</span></a></li>
+            <li><a class="sorting__up sorting__up--active" title="По возрастанию"></a></li>
+            <li><a href="#" class="sorting__down" title="По убыванию"></a></li>
           </ul>
         </div>
         <section class="catalog">
@@ -219,15 +219,6 @@
         <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.</p>
         <p>Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
       </section>
-      <section class="popup cart-popup">
-        <div class="cart-popup__heading">
-          <h2>Товар добавлен в корзину!</h2>
-        </div>
-        <div class="cart-popup__buttons">
-          <a href="#" class="btn cart-popup__btn cart-popup__btn--order">Оформить заказ</a>
-          <a href="#" class="btn cart-popup__btn cart-popup__btn--resume">Продолжить покупки</a>
-        </div>
-      </section>
     </main>
     <footer class="main-footer">
       <section class="main-footer__menu footer-menu">
@@ -247,7 +238,7 @@
               <a href="#">Новости</a>
             </li>
             <li>
-              <a href="#">Каталог</a>
+              <a>Каталог</a>
             </li>
             <li>
               <a href="#">Доставка</a>
@@ -299,5 +290,15 @@
         </div>
       </section>
     </footer>
+    <section class="popup cart-popup">
+      <button type="button" name="popup__close"><span class="visually-hidden">Закрыть</span></button>
+      <div class="cart-popup__heading">
+        <h2>Товар добавлен в корзину!</h2>
+      </div>
+      <div class="cart-popup__buttons">
+        <a href="#" class="btn cart-popup__btn cart-popup__btn--order">Оформить заказ</a>
+        <a href="#" class="btn cart-popup__btn cart-popup__btn--resume">Продолжить покупки</a>
+      </div>
+    </section>
   </body>
 </html>
