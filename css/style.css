@@ -78,6 +78,17 @@ input[type="radio"].visually-hidden {
 
   background-color: #ee3643;
   border-radius: 3px;
+
+  transition: all 0.3s;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #ca2c37;
+}
+
+.btn:active {
+  background-color: #ba2732;
 }
 
 .header-up__logo {
@@ -89,22 +100,11 @@ input[type="radio"].visually-hidden {
 }
 
 .logo {
-  position: relative;
+  display: flex;
 
   border-radius: 0;
   box-shadow: 0 5px 0 0 #b52933;
 
-  transition-duration: 0.5s;
-  transition-property: all;
-}
-
-.logo:hover,
-.logo:focus {
-  background-color: #ca2c37;
-}
-
-.logo:active {
-  background-color: #ba2732;
 }
 
 .search-form__input {
@@ -704,6 +704,7 @@ input[type="radio"].visually-hidden {
 
 .services {
   padding-top: 66px;
+  padding-bottom: 98px;
 
   background-color: #f5f8fa;
 }
@@ -777,4 +778,54 @@ input[type="radio"].visually-hidden {
 
   background-color: #ffffff;
   border: 0;
+}
+
+.services-content__list {
+  margin: 0;
+}
+
+.services-list {
+  padding: 0;
+  padding-left: 80px;
+  padding-top: 4px;
+}
+
+.services-list__item h3 {
+  margin: 0;
+  margin-bottom: 31px;
+
+  font-family: "Cuprum", sans-serif;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #32425c;
+}
+
+.services-list__item p {
+  margin: 0;
+}
+
+.services-list__item--delivery {
+  padding-right: 345px;
+}
+
+.services-list__item--guarantee {
+  padding-right: 240px;
+}
+
+.services-list__item--credit {
+  padding-right: 330px;
+}
+
+.services-list__item--credit p {
+  margin-bottom: 25px;
+}
+
+.info {
+  padding-top: 82px;
+}
+
+.info > .container {
+  display: flex;
 }
