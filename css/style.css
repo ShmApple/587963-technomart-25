@@ -76,20 +76,20 @@ input[type="radio"].visually-hidden {
   text-align: center;
 }
 
-.logo {
-  border-radius: 0;
-  box-shadow: 0 5px 0 0 #b52933;
-  position: relative;
-  /* transition-property: background-color;
-  transition-duration: 0.5s; */
-}
-
 .header-up__logo {
   height: 42px;
   width: 220px;
   padding: 0 55px;
   padding-top: 13px;
   padding-bottom: 10px;
+}
+
+.logo {
+  border-radius: 0;
+  box-shadow: 0 5px 0 0 #b52933;
+  position: relative;
+  transition-property: all;
+  transition-duration: 0.5s;
 }
 
 .logo:hover,
