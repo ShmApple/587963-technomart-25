@@ -656,12 +656,79 @@ text-transform: uppercase;
   margin: auto;
 }
 
+.popular-firms__catalog {
+  margin-bottom: 65px;
+}
+
 .services {
+  padding-top: 66px;
   background-color: #f5f8fa;
 }
 
 .services h2 {
-  font-family: "Cuprum";
+  margin: 0;
+  margin-bottom: 25px;
+  font-family: "Cuprum", sans-serif;
   font-size: 30px;
   line-height: 30px;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: #000000;
+}
+
+.services__text {
+  margin: 0;
+  margin-bottom: 69px;
+}
+
+.services-content {
+  display: flex;
+}
+
+.services-content__menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.services-content__menu label {
+  display: block;
+  width: 240px;
+  min-height: 62px;
+  padding: 14px 22px 16px 22px;
+  background-color: #32425c;
+  border-top: 1px solid #405069;
+  border-bottom: 1px solid #293449;
+
+  cursor: pointer;
+
+  font-family: "Cuprum", sans-serif;
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.services-list__item {
+  display: none;
+}
+
+#delivery:checked ~ .services-list .services-list__item--delivery {
+  display: block;
+}
+
+#guarantee:checked ~ .services-list .services-list__item--guarantee {
+  display: block;
+}
+
+#credit:checked ~ .services-list .services-list__item--credit {
+  display: block;
+}
+
+#delivery:checked ~ .services-content__menu .services-content__control--delivery,
+#guarantee:checked ~ .services-content__menu .services-content__control--guarantee,
+#credit:checked ~ .services-content__menu .services-content__control--credit {
+  border: 0;
+  background-color: #ffffff;
+  color: #32425c;
 }
