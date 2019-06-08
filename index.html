@@ -15,13 +15,22 @@
           <form action="https://htmlacademy.ru/echo" method="get" class="search-form">
             <label><span class="visually-hidden">Поиск по сайту</span>
               <input class="search-form__input" type="search" name="search" placeholder="Поиск:">
+              <svg class="search-form__icon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>
             </label>
             <button type="submit" class="search-form__submit">Найти</button>
           </form>
           <ul class="management header-up__management">
-            <li class="management__item management__item--bookmark"><a href="#">Закладки: <span>0</span></a></li>
-            <li class="management__item management__item--cart"><a href="#">Корзина: <span>0</span></a></li>
-            <li class="management__item management__item--order"><a href="#">Оформить заказ</a></li>
+            <li class="management__item management__item--bookmark">
+              <a class="management__link management__link--bookmark" href="#">Закладки: <span>0</span></a>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16"><path d="M14 15c0 .55-.368.741-.818.426l-5.363-3.765c-.45-.315-1.187-.315-1.637 0L.818 15.426C.368 15.741 0 15.55 0 15V1c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v14z"/></svg>
+            </li>
+            <li class="management__item management__item--cart">
+              <a class="management__link management__link--cart" href="#">Корзина: <span>0</span></a>
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle cx="4.5" cy="13.5" r="1.5"/><circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/><path d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>
+            </li>
+            <li class="management__item management__item--order">
+              <a class="management__link management__link--order" href="#">Оформить заказ</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -34,7 +43,10 @@
               <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
             </div>
             <section class="header-down__user-block user-block">
-              <a href="#" class="btn user-block__btn user-block__btn--sign-in">Войти</a>
+              <a href="#" class="btn user-block__btn user-block__btn--sign-in">
+                Войти
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path d="M14.875 8.5L6 0v6H0v5h6v6z"/><path d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/></svg>
+              </a>
               <a href="#" class="btn user-block__btn user-block__btn--sign-up">Регистрация</a>
             </section>
           </div>
@@ -86,6 +98,14 @@
           </div>
           <div class="promo__down">
             <div class="slider promo__item promo__item--slider promo-slider">
+              <div class="slider-buttons slider__buttons">
+                <a href="#" class="btn slider-buttons__button slider-buttons__button--prev"><span class="visually-hidden">Назад</span></a>
+                <a href="#" class="btn slider-buttons__button slider-buttons__button--next"><span class="visually-hidden">Вперед</span></a>
+              </div>
+              <div class="slider-indicators slider__indicators">
+                <a href="#" class="slider-indicators__indicator slider-indicators__indicator--1"><span class="visually-hidden">1</span></a>
+                <a href="#" class="slider-indicators__indicator slider-indicators__indicator--2 slider-indicators__indicator--active"><span class="visually-hidden">2</span></a>
+              </div>
               <ul>
                 <li class="slide slider__slide slider__slide--1">
                   <div class="slide__content">
@@ -104,10 +124,6 @@
                   <img class="slide__img" src="img/slide-2.jpg" width="620" height="266" alt="Перфораторы">
                 </li>
               </ul>
-              <div class="slider-buttons slider__buttons">
-                <a href="#" class="btn slider-buttons__button slider-buttons__button--prev"><span class="visually-hidden">Назад</span></a>
-                <a href="#" class="btn slider-buttons__button slider-buttons__button--next"><span class="visually-hidden">Вперед</span></a>
-              </div>
             </div>
             <div>
               <article class="promo__item promo__item--sales promo-item">
