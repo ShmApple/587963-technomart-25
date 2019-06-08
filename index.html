@@ -371,26 +371,34 @@
         </div>
       </section>
     </footer>
-    <section class="popup letter-popup" style="display: none;">
+    <section class="popup letter-popup">
       <h2 class="visually-hidden">Написать письмо</h2>
       <button class="popup__close"><span class="visually-hidden">Закрыть</span></button>
       <form class="letter-popup__form" action="https://htmlacademy.ru/echo" method="post">
-        <label>
-          Ваше имя:
-          <input type="text" name="name" placeholder="Имя Фамилия">
-        </label>
-        <label>
-          Ваш e-mail:
-          <input type="email" name="email" placeholder="email@example.com">
-        </label>
+        <div class="letter-popup__container">
+          <div>
+            <label for="name">
+              Ваше имя:
+            </label>
+            <input type="text" name="name" id="name" placeholder="Имя Фамилия">
+          </div>
+          <div>
+            <label for="email">
+              Ваш e-mail:
+            </label>
+            <input type="email" name="email" id="email" placeholder="email@example.com">
+          </div>
+        </div>
         <label>
           Текст письма:
           <textarea name="letter" placeholder="В свободной форме"></textarea>
         </label>
-        <button type="submit" name="submit">Отправить</button>
+        <div class="popup__bottom">
+          <button class="btn popup__btn" type="submit" name="submit">Отправить</button>
+        </div>
       </form>
     </section>
-    <section class="popup map-popup" style="display: none;">
+    <section class="popup map-popup">
       <h2 class="visually-hidden">Мы на карте</h2>
       <button class="popup__close"><span class="visually-hidden">Закрыть</span></button>
       <img src="img/full-map.jpg" width="940" height="446" alt="Мы на карте">
