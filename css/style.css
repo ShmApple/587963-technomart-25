@@ -1247,12 +1247,12 @@ input[type="radio"].visually-hidden {
           box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
 }
 
-.firm-card__link:focus {
+.firm-card__link:active {
   -webkit-box-shadow: 0 4px 10px rgba(41, 52, 73, 0.5);
           box-shadow: 0 4px 10px rgba(41, 52, 73, 0.5);
 }
 
-.firm-card__link:focus img {
+.firm-card__link:active img {
   opacity: 0.3;
 
   -webkit-transition: opacity 0.3s;
@@ -1741,16 +1741,17 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin: 0;
   padding: 0;
   padding-top: 35px;
 
   list-style: none;
+
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -ms-flex-wrap: wrap;
 }
 
 .social li {
@@ -2035,7 +2036,7 @@ input[type="radio"].visually-hidden {
           transform: translateY(50%);
   cursor: pointer;
   cursor: -webkit-grab;
-  cursor: grab;
+  cursor:         grab;
 }
 
 .range-controls__toggle--min {
