@@ -21,12 +21,14 @@
           </form>
           <ul class="management header-up__management">
             <li class="management__item management__item--bookmark">
-              <a class="management__link management__link--bookmark" href="#">Закладки: <span>0</span></a>
-              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16"><path d="M14 15c0 .55-.368.741-.818.426l-5.363-3.765c-.45-.315-1.187-.315-1.637 0L.818 15.426C.368 15.741 0 15.55 0 15V1c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v14z"/></svg>
+              <a class="management__link management__link--bookmark" href="#">Закладки: <span>0</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16"><path d="M14 15c0 .55-.368.741-.818.426l-5.363-3.765c-.45-.315-1.187-.315-1.637 0L.818 15.426C.368 15.741 0 15.55 0 15V1c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v14z"/></svg>
+              </a>
             </li>
             <li class="management__item management__item--cart management__item--added">
-              <a class="management__link management__link--cart" href="#">Корзина: <span>10</span></a>
-              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle cx="4.5" cy="13.5" r="1.5"/><circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/><path d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>
+              <a class="management__link management__link--cart" href="#">Корзина: <span>10</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle cx="4.5" cy="13.5" r="1.5"/><circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/><path d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>
+              </a>
             </li>
             <li class="management__item management__item--order">
               <a class="management__link management__link--order" href="#">Оформить заказ</a>
@@ -37,9 +39,11 @@
       <div class="main-header__down header-down">
         <div class="container">
           <div class="header-down__top">
-            <h1 class="header-down__title">Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта</h1>
+            <p class="header-down__title">Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта</p>
             <div class="header-contacts header-down__contacts">
-              <a href="tel:+78125550555" class="header-contacts__phone-number">+7 (812) 555-05-55</a>
+              <a href="tel:+78125550555" class="header-contacts__phone-number">+7 (812) 555-05-55
+                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19"><path d="M15.572 18.985h-.941c-4.129-.488-7.157-2.408-9.359-4.864C3.062 11.66 1.318 8.492.978 4.228V3.084c.078-.774.459-1.304.898-1.757C2.425.766 3.25.044 4.002.019c.554-.018 1.5.38 1.879.899.329.446.504 1.339.656 2.003.154.671.505 1.643.408 2.289-.148 1.007-1.487 1.434-1.879 2.166 1.307 3.135 3.443 5.439 6.293 7.031.715-.392 1.346-1.572 2.332-1.595.359-.009.818.178 1.184.286.402.121.75.275 1.104.408.596.224 1.648.521 2.004 1.021.365.513.57 1.356.49 1.879-.164 1.041-1.879 2.197-2.901 2.579z"/></svg>
+              </a>
               <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
             </div>
             <section class="header-down__user-block user-block user-block--loged">
@@ -88,7 +92,7 @@
     <main>
       <div class="container">
         <ul class="breadcrumbs">
-          <li><a class="breadcrumbs__main" href="index.html"><span class="visually-hidden">Главная</span></a></li>
+          <li><a class="breadcrumbs__main" href="index.html" title="На главную"></a></li>
           <li><a href="#">Каталог</a></li>
           <li><a href="#">Инструмент</a></li>
           <li><a>Перфораторы</a></li>
@@ -178,7 +182,7 @@
               </ul>
               <ul class="direction sorting__list sorting__list--direction">
                 <li>
-                  <a class="direction__item direction__item--up direction__item--active" title="По возрастанию" tabindex="0">
+                  <a class="direction__item direction__item--up direction__item--active" title="По возрастанию">
                     <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 0L0 10h11z"/></svg>
                   </a>
                 </li>
@@ -284,7 +288,7 @@
                 </li>
               </ul>
               <ul class="pages">
-                <li><a class="btn pages__item pages__item--active">1</a></li>
+                <li><a class="btn pages__item">1</a></li>
                 <li><a href="#" class="btn pages__item">2</a></li>
                 <li><a href="#" class="btn pages__item">3</a></li>
                 <li><a href="#" class="btn pages__item pages__item--next">Следующая</a></li>
@@ -375,7 +379,10 @@
       </section>
     </footer>
     <section class="popup cart-popup">
-      <button class="popup__close"><span class="visually-hidden">Закрыть</span></button>
+      <button class="popup__close">
+        <span class="visually-hidden">Закрыть</span>
+        <svg enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z"/></svg>
+      </button>
       <div class="cart-popup__heading">
         <h2>Товар добавлен в корзину!</h2>
       </div>
