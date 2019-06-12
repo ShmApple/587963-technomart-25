@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i|PT+Sans:400,400i,700,700i&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
   </head>
   <body>
     <header class="main-header">
@@ -41,7 +42,9 @@
           <div class="header-down__top">
             <h1 class="header-down__title">Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта</h1>
             <div class="header-contacts header-down__contacts">
-              <a href="tel:+78125550555" class="header-contacts__phone-number">+7 (812) 555-05-55</a>
+              <a href="tel:+78125550555" class="header-contacts__phone-number">+7 (812) 555-05-55
+                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19"><path d="M15.572 18.985h-.941c-4.129-.488-7.157-2.408-9.359-4.864C3.062 11.66 1.318 8.492.978 4.228V3.084c.078-.774.459-1.304.898-1.757C2.425.766 3.25.044 4.002.019c.554-.018 1.5.38 1.879.899.329.446.504 1.339.656 2.003.154.671.505 1.643.408 2.289-.148 1.007-1.487 1.434-1.879 2.166 1.307 3.135 3.443 5.439 6.293 7.031.715-.392 1.346-1.572 2.332-1.595.359-.009.818.178 1.184.286.402.121.75.275 1.104.408.596.224 1.648.521 2.004 1.021.365.513.57 1.356.49 1.879-.164 1.041-1.879 2.197-2.901 2.579z"/></svg>
+              </a>
               <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
             </div>
             <section class="header-down__user-block user-block">
@@ -242,7 +245,7 @@
       <section class="services">
         <div class="container">
           <h2>Сервисы</h2>
-          <p class="services__text">Хороший интернет-магазин отличается от плохого не только ценами!<br>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+          <p class="services__text">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
           <div class="services-content services__content">
             <input class="visually-hidden" type="radio" name="slider" id="delivery" checked tabindex="-1">
             <input class="visually-hidden" type="radio" name="slider" id="guarantee" tabindex="-1">
@@ -375,34 +378,40 @@
     </footer>
     <section class="popup letter-popup">
       <h2 class="visually-hidden">Написать письмо</h2>
-      <button class="popup__close"><span class="visually-hidden">Закрыть</span></button>
+      <button class="popup__close"><span class="visually-hidden">Закрыть</span>
+        <svg enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z"/></svg>
+      </button>
       <form class="letter-popup__form" action="https://htmlacademy.ru/echo" method="post">
-        <div class="letter-popup__container">
-          <div>
-            <label for="name">
-              Ваше имя:
-            </label>
-            <input type="text" name="name" id="name" placeholder="Имя Фамилия">
+        <div class="container">
+          <div class="letter-popup__container">
+            <div>
+              <label for="name">
+                Ваше имя:
+              </label>
+              <input type="text" name="name" id="name" placeholder="Имя Фамилия">
+            </div>
+            <div>
+              <label for="email">
+                Ваш e-mail:
+              </label>
+              <input type="email" name="email" id="email" placeholder="email@example.com">
+            </div>
           </div>
-          <div>
-            <label for="email">
-              Ваш e-mail:
-            </label>
-            <input type="email" name="email" id="email" placeholder="email@example.com">
-          </div>
+          <label for="letter">
+            Текст письма:
+          </label>
+          <textarea name="letter" id="letter" placeholder="В свободной форме"></textarea>
         </div>
-        <label>
-          Текст письма:
-          <textarea name="letter" placeholder="В свободной форме"></textarea>
-        </label>
         <div class="popup__bottom">
           <button class="btn popup__btn" type="submit" name="submit">Отправить</button>
         </div>
       </form>
     </section>
-    <section class="popup map-popup">
+    <section class="popup map-popup" style="display: none;">
       <h2 class="visually-hidden">Мы на карте</h2>
-      <button class="popup__close"><span class="visually-hidden">Закрыть</span></button>
+      <button class="popup__close"><span class="visually-hidden">Закрыть</span>
+        <svg enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z"/></svg>
+      </button>
       <img src="img/full-map.jpg" width="940" height="446" alt="Мы на карте">
     </section>
     <script src="js/script.js"></script>
