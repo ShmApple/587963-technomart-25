@@ -93,6 +93,10 @@ input[type="radio"].visually-hidden {
   display: block;
   padding: 11px 24px 9px 24px;
 
+  display: inline-block;
+
+  vertical-align: top;
+
   font-size: 14px;
   line-height: 18px;
   font-family: "Cuprum", Arial, sans-serif;
@@ -360,7 +364,9 @@ input[type="radio"].visually-hidden {
   font-size: 16px;
   line-height: 23px;
   color: #ee3643;
-  font-style: italic;;
+  font-style: italic;
+
+  white-space: pre-wrap;
 }
 
 
@@ -706,7 +712,7 @@ input[type="radio"].visually-hidden {
 }
 
 .promo {
-  margin-bottom: 45px;
+  margin-bottom: 53px;
   padding-top: 59px;
 }
 
@@ -1272,6 +1278,43 @@ input[type="radio"].visually-hidden {
 
 .firm-card img {
   margin: auto;
+}
+
+.catalog__firm-card--bosh img {
+  margin-top: 52px;
+}
+
+.catalog__firm-card--makita img {
+  margin-top: 49px;
+}
+
+.catalog__firm-card--dewalt img {
+  margin-top: 47px;
+}
+
+.catalog__firm-card--interskol img {
+  margin-top: 20px;
+  margin-left: 8px;
+}
+
+.catalog__firm-card--hitachi img {
+  margin-top: 57px;
+  margin-left: 27px;
+}
+
+.catalog__firm-card--lg img {
+  margin-top: 34px;
+  margin-left: 47px;
+}
+
+.catalog__firm-card--aeg img {
+  margin-top: 22px;
+  margin-left: 34px;
+}
+
+.catalog__firm-card--metabo img {
+  margin-top: 33px;
+  margin-left: 9px;
 }
 
 .services {
@@ -2113,6 +2156,12 @@ input[type="radio"].visually-hidden {
 .filter-form__input--price {
   width: 95px;
   height: 38px;
+
+  margin-right: 30px;
+}
+
+.filter-form__input--price:nth-child(2) {
+  margin-right: 0;
 }
 
 .filter-form__input--price::-webkit-outer-spin-button,
@@ -2280,10 +2329,9 @@ input[type="radio"].visually-hidden {
   display: -ms-flexbox;
   display: flex;
       flex-wrap: wrap;
-  justify-content: flex-end;
-  width: 420px;
+  width: 400px;
   margin: 0;
-  margin-left: 73px;
+  margin-left: 140px;
   padding: 0;
 
   list-style: none;
@@ -2294,7 +2342,7 @@ input[type="radio"].visually-hidden {
 }
 
 .sorting__list li {
-  margin-left: 65px;
+  margin: 0 32.5px;
 }
 
 .sorting__list li:nth-child(1) {
@@ -2315,7 +2363,7 @@ input[type="radio"].visually-hidden {
           transition: all 0.3s;
 }
 
-.sorting__item::before {
+.sorting__item[href]::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -2331,43 +2379,37 @@ input[type="radio"].visually-hidden {
           transition: all 0.3s;
 }
 
-.sorting__item:hover,
-.sorting__item:focus {
+.sorting__item[href]:hover,
+.sorting__item[href]:focus {
   color: #000000;
 }
 
-.sorting__item:hover::before,
-.sorting__item:focus::before {
+.sorting__item[href]:hover::before,
+.sorting__item[href]:focus::before {
   background-color: #ee3643;
   border-color: transparent;
 }
 
-.sorting__item:active {
+.sorting__item[href]:active {
   color: #ee3643;
 }
 
-.sorting__item:active::before {
+.sorting__item[href]:active::before {
   left: 50%;
 
   width: 0;
 }
 
-.sorting__item--active {
+.sorting__item:not([href]) {
   margin-right: 6px;
 
   color: #ee3643;
 }
 
-.sorting__item--active::before {
-  content: "";
-
-  display: none;
-}
-
 .sorting__list--direction {
   width: 44px;
   margin-top: 2px;
-  margin-left: 47px;
+  margin-left: auto;
 }
 
 .direction {
@@ -2379,6 +2421,7 @@ input[type="radio"].visually-hidden {
 
 .direction li {
   height: 10px;
+  margin: 0;
   margin-left: 21px;
 }
 
