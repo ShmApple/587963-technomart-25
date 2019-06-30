@@ -91,15 +91,13 @@ input[type="radio"].visually-hidden {
 
 .btn {
   display: block;
-  padding: 11px 24px 9px 24px;
-
   display: inline-block;
-
-  vertical-align: top;
+  padding: 11px 24px 9px 24px;
 
   font-size: 14px;
   line-height: 18px;
   font-family: "Cuprum", Arial, sans-serif;
+  vertical-align: top;
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
@@ -365,7 +363,6 @@ input[type="radio"].visually-hidden {
   line-height: 23px;
   color: #ee3643;
   font-style: italic;
-
   white-space: pre-wrap;
 }
 
@@ -2156,7 +2153,6 @@ input[type="radio"].visually-hidden {
 .filter-form__input--price {
   width: 95px;
   height: 38px;
-
   margin-right: 30px;
 }
 
